@@ -1,0 +1,205 @@
+/* ============================================
+   WebGIS SMKN Lampung Tengah — style.css
+   Simpan di: Assets/css/style.css
+   ============================================ */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f1f5f9;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* HEADER */
+#topbar {
+  height: 58px;
+  background: linear-gradient(90deg, #0c3d6b, #1a73c8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  gap: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  flex-shrink: 0;
+  z-index: 1000;
+}
+.logo-wrap  { display: flex; align-items: center; gap: 10px; }
+.logo-icon  { font-size: 1.6rem; }
+.logo-title { font-size: 1rem; font-weight: 800; line-height: 1.2; }
+.logo-sub   { font-size: 0.7rem; opacity: 0.75; }
+
+.header-stats { display: flex; gap: 0.6rem; }
+.stat-chip {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 99px;
+  padding: 4px 14px;
+  font-size: 0.78rem;
+}
+.stat-chip strong { font-size: 0.9rem; }
+
+#koordinat-bar {
+  font-size: 0.72rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 99px;
+  padding: 4px 14px;
+  white-space: nowrap;
+}
+
+/* LAYOUT */
+#layout { flex: 1; display: flex; position: relative; overflow: hidden; }
+
+/* SIDEBAR */
+#sidebar {
+  width: 255px;
+  flex-shrink: 0;
+  background: white;
+  border-right: 1px solid #e2e8f0;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.55rem 0.85rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 9px;
+  font-size: 0.84rem;
+  font-family: inherit;
+  outline: none;
+  background: #f8fafc;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.2s;
+}
+#search-input:focus { border-color: #1a73c8; }
+
+.section-label {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #0f4c81;
+  margin: 0.9rem 0 0.45rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1.5px solid #e2e8f0;
+}
+
+.btn-group { display: flex; gap: 5px; }
+.map-btn {
+  flex: 1;
+  padding: 0.38rem 0.3rem;
+  font-size: 0.78rem;
+  font-family: inherit;
+  font-weight: 600;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.map-btn:hover  { border-color: #1a73c8; color: #0f4c81; }
+.map-btn.active { background: #0f4c81; color: white; border-color: #0f4c81; }
+
+#school-list { list-style: none; display: flex; flex-direction: column; gap: 3px; }
+#school-list li {
+  padding: 0.48rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  line-height: 1.4;
+  transition: all 0.18s;
+}
+#school-list li:hover  { background: #eff6ff; border-color: #bfdbfe; }
+#school-list li.aktif  { background: #dbeafe; border-color: #1a73c8; font-weight: 700; }
+#school-list li.tersembunyi { display: none; }
+#school-list li .nama-kec { font-size: 0.7rem; color: #64748b; display: block; margin-top: 1px; }
+
+.legend { display: flex; flex-direction: column; gap: 6px; }
+.legend-row { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #64748b; }
+.leg-dot {
+  width: 12px; height: 12px;
+  background: #1a73c8;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #0f4c81;
+  flex-shrink: 0;
+}
+
+/* PETA */
+#map { flex: 1; height: 100%; z-index: 1; }
+
+/* PANEL DETAIL */
+#detail-panel {
+  position: absolute;
+  top: 12px; right: 12px;
+  width: 290px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+  border: 1px solid #e2e8f0;
+  z-index: 500;
+  overflow: hidden;
+  animation: masuk 0.25s ease;
+}
+#detail-panel.hidden { display: none; }
+@keyframes masuk {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+#close-panel {
+  position: absolute; top: 10px; right: 10px;
+  background: rgba(255,255,255,0.2);
+  border: none; border-radius: 6px;
+  padding: 3px 9px; font-size: 0.75rem;
+  cursor: pointer; color: white; z-index: 10;
+}
+#close-panel:hover { background: rgba(255,255,255,0.35); }
+
+#panel-content { padding: 1.1rem; }
+.panel-header {
+  background: linear-gradient(135deg, #0f4c81, #1a73c8);
+  margin: -1.1rem -1.1rem 1rem;
+  padding: 1rem 1.1rem 0.9rem;
+  color: white;
+}
+.panel-header .p-icon { font-size: 1.5rem; margin-bottom: 4px; }
+.panel-header .p-nama { font-size: 0.95rem; font-weight: 800; line-height: 1.25; }
+.panel-header .p-kec  { font-size: 0.72rem; opacity: 0.8; margin-top: 2px; }
+
+.info-baris {
+  display: flex; gap: 8px;
+  font-size: 0.81rem; padding: 0.32rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  align-items: flex-start;
+}
+.info-baris:last-child { border-bottom: none; }
+.info-baris .lbl { color: #94a3b8; font-size: 0.72rem; width: 100px; flex-shrink: 0; }
+.info-baris .val { font-weight: 600; color: #1e293b; }
+
+.bar-wrap { margin-top: 0.8rem; }
+.bar-label { font-size: 0.72rem; color: #64748b; display: flex; justify-content: space-between; margin-bottom: 5px; }
+.bar-track { height: 8px; background: #e2e8f0; border-radius: 99px; overflow: hidden; }
+.bar-isi {
+  height: 100%;
+  background: linear-gradient(90deg, #0f4c81, #1a73c8);
+  border-radius: 99px; width: 0%;
+  transition: width 1s ease;
+}
+
+/* POPUP LEAFLET */
+.leaflet-popup-content-wrapper { border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); padding: 0; }
+.leaflet-popup-content { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+.isi-popup { padding: 10px 14px; }
+.isi-popup strong { color: #0f4c81; font-size: 0.88rem; display: block; margin-bottom: 2px; }
+.isi-popup span   { font-size: 0.78rem; color: #64748b; }

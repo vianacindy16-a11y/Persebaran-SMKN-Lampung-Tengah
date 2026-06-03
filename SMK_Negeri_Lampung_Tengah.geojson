@@ -1,0 +1,204 @@
+{
+  "type": "FeatureCollection",
+  "name": "SMKN_Lampung_Tengah",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAMA": "SMK NEGERI 1 TRIMURJO",
+        "NPSN": "69958911",
+        "ALAMAT": "Jalan Bakti ABRI Liman Benawi Kecamatan Trimurjo",
+        "AKREDITASI": "B",
+        "LATITUDE": -5.121,
+        "LONGITUDE": 105.264
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.264,
+          -5.121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAMA": "SMKN 1 TERBANGGI BESAR",
+        "NPSN": "10802080",
+        "ALAMAT": "JL. JEND. A. YANI NO. 1",
+        "AKREDITASI": "A",
+        "LATITUDE": -4.897,
+        "LONGITUDE": 105.192
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.192,
+          -4.897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAMA": "SMKN 2 TERBANGGI BESAR",
+        "NPSN": "10802079",
+        "ALAMAT": "JL. AHMAD YANI NO.3 PONCOWATI",
+        "AKREDITASI": "A",
+        "LATITUDE": -4.899,
+        "LONGITUDE": 105.21
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.21,
+          -4.899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAMA": "SMKN 3 TERBANGGI BESAR",
+        "NPSN": "10802078",
+        "ALAMAT": "JL. AHMAD YANI NO. 2 PONCOWATI",
+        "AKREDITASI": "B",
+        "LATITUDE": -4.913,
+        "LONGITUDE": 105.159
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.159,
+          -4.913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAMA": "SMKN 1 TERUSAN NUNYAI",
+        "NPSN": "10813434",
+        "ALAMAT": "JL. RAYA KECAMATAN NO. 8",
+        "AKREDITASI": "B",
+        "LATITUDE": -4.643,
+        "LONGITUDE": 105.185
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.185,
+          -4.643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAMA": "SMKN 1 SEPUTIH SURABAYA",
+        "NPSN": "10812403",
+        "ALAMAT": "Gaya Baru Tiga",
+        "AKREDITASI": "B",
+        "LATITUDE": -4.678,
+        "LONGITUDE": 105.659
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.659,
+          -4.678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAMA": "SMKN 1 BUMI RATU NUBAN",
+        "NPSN": "69900097",
+        "ALAMAT": "Jl. Pandawa",
+        "AKREDITASI": "B",
+        "LATITUDE": -5.105,
+        "LONGITUDE": 105.183
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.183,
+          -5.105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAMA": "SMKN 1 WAY PENGUBUAN",
+        "NPSN": "10814698",
+        "ALAMAT": "JALAN PURNAWIRAWAN",
+        "AKREDITASI": "B",
+        "LATITUDE": -4.894,
+        "LONGITUDE": 105.137
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.137,
+          -4.894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAMA": "SMKN 1 SEPUTIH AGUNG",
+        "NPSN": "10809324",
+        "ALAMAT": "JL. RAYA DONO ARUM. SIMPANG AGUNG",
+        "AKREDITASI": "A",
+        "LATITUDE": -4.94,
+        "LONGITUDE": 105.138
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.138,
+          -4.94
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAMA": "SMKN UNGGUL TERPADU ANAK TUHA",
+        "NPSN": "69824848",
+        "ALAMAT": "JL. SULUSUBAN ANAK TUHA NO 2",
+        "AKREDITASI": "B",
+        "LATITUDE": -4.954,
+        "LONGITUDE": 105.062
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.062,
+          -4.954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAMA": "SMKN SELAGAI LINGGA",
+        "NPSN": "10813433",
+        "ALAMAT": "JL. BUKIT SULAH PERDANA TAMAN SARI NO 01 SELAGAI LINGGA",
+        "AKREDITASI": "C",
+        "LATITUDE": -5.048,
+        "LONGITUDE": 104.855
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.855,
+          -5.048
+        ]
+      }
+    }
+  ]
+}
